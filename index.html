@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игры</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Лучшие игры</h1>
+      <div class="cards-block">
+        <div class="card">
+          <div class="img"><img src="img/1.jpg" alt="roblox" /></div>
+          <div class="info">
+            <h3>Roblox</h3>
+            <p><i>Roblox Corpation</i></p>
+            <p><b>4900</b> Руб.</p>
+            <a href="https://www.roblox.com/download" target="_blank"><button>Купить</button></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/2.jpg" alt="dota 2" /></div>
+          <div class="info">
+            <h3>Dota 2</h3>
+            <p><i>Valve</i></p>
+            <p><b>2399 </b>руб.</p>
+            <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank"><button>Купить</button></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/3.png" alt="minecraft" /></div>
+          <div class="info">
+            <h3>Minecraft</h3>
+            <p><i>Mogang studios</i></p>
+            <p><b>54789 </b>руб. в 1 сек.</p>
+            <a href="https://www.minecraft.net/ru-ru/store/minecraft-java-bedrock-edition-pc" target="_blank"><button>Купить</button></a> <br />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/4.png" alt="амонг" /></div>
+          <div class="info">
+            <h3>Among Us</h3>
+            <p><i>InnerSloth</i></p>
+            <p><b>598 </b>руб.</p>
+            <a href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank"><button>Купить</button></a> <br />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/5.png" alt="амонг" /></div>
+          <div class="info">
+            <h3>Bravl Stars</h3>
+            <p><i>supercell</i></p>
+            <p><b>564 </b>руб.</p>
+            <a href="https://supercell.com/en/games/brawlstars/" target="_blank"><button>Купить</button></a> <br />
+          </div>
+        </div>
+      </div>
+
+      <h2>Тарифы</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class="probe">пробный</th>
+            <th class="start">начальный</th>
+            <th class="basic">базовый</th>
+            <th class="vip">премиум</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 игра на выбор</td>
+            <td>3 игры на выбор</td>
+            <td>4 игры на выбор</td>
+            <td>все игры</td>
+          </tr>
+          <tr>
+            <td>на 15 дней</td>
+            <td>на 30 дней</td>
+            <td>на 1 месяц</td>
+            <td>на 12 месяцов и более</td>
+          </tr>
+          <tr>
+            <td>доставка после покупки занимает 20 дней</td>
+            <td>доставка после покупки занимает 15 дней</td>
+            <td>доставка после покупки занимает 10 дней</td>
+            <td>доставка после покупки сразу</td>
+          </tr>
+          <tr>
+            <td>поддержки нет</td>
+            <td>поддержка 8/2</td>
+            <td>поддержка 12/7</td>
+            <td>поддержка 24/7</td>
+          </tr>
+          <tr>
+            <td>бета тест отсутствовует</td>
+            <td>бета тест только на 1 час</td>
+            <td>бета тест только на выбранные игры</td>
+            <td>весь бета тест</td>
+          </tr>
+          <tr class="buttons">
+            <td><button onclick="window.buyModal.showModal()">Купить</button></td>
+            <td><button onclick="window.buyModal.showModal()">Купить</button></td>
+            <td><button onclick="window.buyModal.showModal()">Купить</button></td>
+            <td><button onclick="window.buyModal.showModal()">Купить</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <dialog id="buyModal">
+      <form action="">
+        <p><input type="text" name="name" placeholder="ФИО" required/></p>
+        <p>
+          <input type="email" name="email" placeholder="Электронная почта" required/>
+        </p>
+        <p>
+          <form method="dialog">
+            <button>Отправить</button>
+
+          </form>
+        </p>
+      </form>
+    </dialog>
+  </body>
+</html>
